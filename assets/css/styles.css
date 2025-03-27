@@ -127,3 +127,54 @@
     border-color: #d2abe8;
     font-weight: 700;
 }
+
+.spinner-task-pink{
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border-radius:50%;
+    vertical-align: middle;
+    background: #FF007C;
+}
+.spinner-task-blue-primary{
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border-radius:50%;
+    vertical-align: middle;
+    background: #00CCF2;
+}
+.spinner-task-blue-menu{
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    border-radius:50%;
+    vertical-align: middle;
+    background: #2D62ED;
+}
+.spinner-task-velvet{
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border-radius:50%;
+    vertical-align: middle;
+    background: #7D00B5;
+}
+
+.spinner-task-rojo{
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border-radius:50%;
+    vertical-align: middle;
+    background: #FF0000;
+}
+
+.spinner-task-green{
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border-radius:50%;
+    vertical-align: middle;
+    background:#066602;
+}

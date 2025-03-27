@@ -7,18 +7,18 @@ File: Form file upload Js File
 */
 
 // Dropzone
-var dropzonePreviewNode = document.querySelector("#dropzone-preview-list");
-dropzonePreviewNode.id = "";
-if(dropzonePreviewNode){
-    var previewTemplate = dropzonePreviewNode.parentNode.innerHTML;
-    dropzonePreviewNode.parentNode.removeChild(dropzonePreviewNode);
-    var dropzone = new Dropzone(".dropzone", {
-        url: 'https://httpbin.org/post',
-        method: "post",
-        previewTemplate: previewTemplate,
-        previewsContainer: "#dropzone-preview",
-    });
-}
+// var dropzonePreviewNode = document.querySelector("#dropzone-preview-list");
+// dropzonePreviewNode.id = "";
+// if(dropzonePreviewNode){
+//     var previewTemplate = dropzonePreviewNode.parentNode.innerHTML;
+//     dropzonePreviewNode.parentNode.removeChild(dropzonePreviewNode);
+//     var dropzone = new Dropzone(".dropzone", {
+//         url: 'https://httpbin.org/post',
+//         method: "post",
+//         previewTemplate: previewTemplate,
+//         previewsContainer: "#dropzone-preview",
+//     });
+// }
 
 // FilePond
 FilePond.registerPlugin(
@@ -43,7 +43,7 @@ Array.from(inputMultipleElements).forEach(function (inputElement) {
 
 FilePond.create(
     document.querySelector('.filepond-input-circle'), {
-        labelIdle: 'Drag & Drop your picture or <span class="filepond--label-action">Browse</span>',
+        labelIdle: ' <span class="filepond--label-action">Adjuntar Archivos</span> <br> (Formatos aceptados: .jpg, .png, .xlsx, .docx, .pdf)',
         imagePreviewHeight: 170,
         imageCropAspectRatio: '1:1',
         imageResizeTargetWidth: 200,

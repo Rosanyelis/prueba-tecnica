@@ -14,7 +14,18 @@
     <script src="../assets/js/pages/form-pickers.init.js"></script>
     <!-- Sweet Alerts js -->
     <script src="../assets/libs/sweetalert2/sweetalert2.min.js"></script>
+    <!-- ckeditor -->
+    <script src="../assets/libs/%40ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
+    <!-- init js -->
+    <script src="../assets/js/pages/form-editor.init.js"></script>
+    <!-- filepond js -->
+    <script src="../assets/libs/filepond/filepond.min.js"></script>
+    <script src="../assets/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.js"></script>
+    <script src="../assets/libs/filepond-plugin-file-validate-size/filepond-plugin-file-validate-size.min.js"></script>
+    <script src="../assets/libs/filepond-plugin-image-exif-orientation/filepond-plugin-image-exif-orientation.min.js"></script>
+    <script src="../assets/libs/filepond-plugin-file-encode/filepond-plugin-file-encode.min.js"></script>
 
+    <script src="../assets/js/pages/form-file-upload.init.js"></script>
     <!-- App js -->
     <script src="../assets/js/app.js"></script>
 

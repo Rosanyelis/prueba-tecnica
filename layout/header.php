@@ -36,6 +36,13 @@
     <link rel="stylesheet" href="../assets/libs/@simonwep/pickr/themes/classic.min.css" /> <!-- 'classic' theme -->
     <link rel="stylesheet" href="../assets/libs/@simonwep/pickr/themes/monolith.min.css" /> <!-- 'monolith' theme -->
     <link rel="stylesheet" href="../assets/libs/@simonwep/pickr/themes/nano.min.css" /> <!-- 'nano' theme -->
+    <!-- quill css -->
+    <link href="../assets/libs/quill/quill.core.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/libs/quill/quill.bubble.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/libs/quill/quill.snow.css" rel="stylesheet" type="text/css" />
+    <!-- Filepond css -->
+    <link rel="stylesheet" href="../assets/libs/filepond/filepond.min.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css">
 </head>
 
 <body>

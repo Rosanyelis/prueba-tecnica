@@ -84,7 +84,7 @@
                                                                 width: 70vw;">
                                                                 <div class="p-4">
                                                                     <div class="row g-5">
-                                                                        <div class="col-3 text-center">
+                                                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 text-center">
                                                                             <h6>Foto de perfil</h6>
                                                                             <img src="assets/images/users/avatar-10.jpg" class="img-fluid rounded-circle" width="150" height="150" id alt="">
                                                                         </div>
@@ -98,9 +98,9 @@
                                                                                 <h6>Dirección</h6>
                                                                             </div>
 
-                                                                            <a href="#" class="btn btn-link mt-0">Ir a datos personales</a>
+                                                                            <a href="./pacientes-datos-personales.php" class="btn btn-link mt-0">Ir a datos personales</a>
                                                                         </div>
-                                                                        <div class="col-3 border-start">
+                                                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 border-start">
                                                                             <h6>Tratamientos</h6>
                                                                             <div class="d-flex justify-content-between">
                                                                                 <h6>Activos</h6>
@@ -116,9 +116,9 @@
                                                                             </div>
                                                                             
 
-                                                                            <a href="#" class="btn btn-link mt-5">Ir a tratamientos</a>
+                                                                            <a href="./pacientes-planes-de-tratamiento.php" class="btn btn-link mt-5">Ir a tratamientos</a>
                                                                         </div>
-                                                                        <div class="col-3 border-start">
+                                                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 border-start">
                                                                             <h6>Deudas</h6>
                                                                             <div class="d-flex justify-content-between">
                                                                                 <h6>Realizado</h6>
@@ -133,7 +133,7 @@
                                                                                 <h6>$ 4000</h6>
                                                                             </div>
 
-                                                                            <a href="#" class="btn btn-link mt-5">Ir a recaudación</a>
+                                                                            <a href="./pacientes-facturacion-y-pago.php" class="btn btn-link mt-5">Ir a recaudación</a>
                                                                         </div>
                                                                         
                                                                     </div>
@@ -166,7 +166,7 @@
                                                             </button>
                                                             <ul class="dropdown-menu dropdown-menu-end" style="">
                                                                 <li>
-                                                                    <a class="dropdown-item" href="apps-ecommerce-product-details.html">
+                                                                    <a class="dropdown-item" href="./pacientes-datos-personales.php">
                                                                         Ir a datos personales
                                                                     </a>
                                                                 </li>

@@ -81,13 +81,13 @@
                                                                 </div>   
                                                             </button>
                                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                                                <li><a class="dropdown-item" href="#">Plan de tratamiento</a></li>
-                                                                <li><a class="dropdown-item" href="#">Recaudación</a></li>
-                                                                <li><a class="dropdown-item" href="#">Datos Personales</a></li>
-                                                                <li><a class="dropdown-item" href="#">Ir a la ficha clinica del paciente</a></li>
-                                                                <li><a class="dropdown-item" href="#">Cambiar fecha / horario</a></li>
+                                                                <li><a class="dropdown-item" href="./pacientes-planes-de-tratamiento.php">Plan de tratamiento</a></li>
+                                                                <li><a class="dropdown-item" href="./pacientes-factauracion-y-pago.php">Recaudación</a></li>
+                                                                <li><a class="dropdown-item" href="./pacientes-datos-personales.php">Datos Personales</a></li>
+                                                                <li><a class="dropdown-item" href="./pacientes-ficha-clinica.php">Ir a la ficha clinica del paciente</a></li>
+                                                                <li><a class="dropdown-item" data-bs-toggle="modal" href="#ModalAgendar">Cambiar fecha / horario</a></li>
                                                                 <li><a class="dropdown-item" href="#">Agregar comentario</a></li>
-                                                                <li><a class="dropdown-item" href="#">Comentarios administrativos</a></li>    
+                                                                <li><a class="dropdown-item" href="./pacientes-datos-personales.php">Comentarios administrativos</a></li>    
                                                             </ul>
                                                         </td>
                                                         <td class="py-0 px-1">
@@ -183,13 +183,13 @@
                                                                 </div>   
                                                             </button>
                                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                                                <li><a class="dropdown-item" href="#">Plan de tratamiento</a></li>
-                                                                <li><a class="dropdown-item" href="#">Recaudación</a></li>
-                                                                <li><a class="dropdown-item" href="#">Datos Personales</a></li>
-                                                                <li><a class="dropdown-item" href="#">Ir a la ficha clinica del paciente</a></li>
-                                                                <li><a class="dropdown-item" href="#">Cambiar fecha / horario</a></li>
+                                                                <li><a class="dropdown-item" href="./pacientes-planes-de-tratamiento.php">Plan de tratamiento</a></li>
+                                                                <li><a class="dropdown-item" href="./pacientes-factauracion-y-pago.php">Recaudación</a></li>
+                                                                <li><a class="dropdown-item" href="./pacientes-datos-personales.php">Datos Personales</a></li>
+                                                                <li><a class="dropdown-item" href="./pacientes-ficha-clinica.php">Ir a la ficha clinica del paciente</a></li>
+                                                                <li><a class="dropdown-item" data-bs-toggle="modal" href="#ModalAgendar">Cambiar fecha / horario</a></li>
                                                                 <li><a class="dropdown-item" href="#">Agregar comentario</a></li>
-                                                                <li><a class="dropdown-item" href="#">Comentarios administrativos</a></li>    
+                                                                <li><a class="dropdown-item" href="./pacientes-datos-personales.php">Comentarios administrativos</a></li>    
                                                             </ul>
                                                         </td>
                                                         <td class="py-0 px-1">
@@ -285,13 +285,13 @@
                                                                 </div>   
                                                             </button>
                                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                                                <li><a class="dropdown-item" href="#">Plan de tratamiento</a></li>
-                                                                <li><a class="dropdown-item" href="#">Recaudación</a></li>
-                                                                <li><a class="dropdown-item" href="#">Datos Personales</a></li>
-                                                                <li><a class="dropdown-item" href="#">Ir a la ficha clinica del paciente</a></li>
-                                                                <li><a class="dropdown-item" href="#">Cambiar fecha / horario</a></li>
+                                                                <li><a class="dropdown-item" href="./pacientes-planes-de-tratamiento.php">Plan de tratamiento</a></li>
+                                                                <li><a class="dropdown-item" href="./pacientes-factauracion-y-pago.php">Recaudación</a></li>
+                                                                <li><a class="dropdown-item" href="./pacientes-datos-personales.php">Datos Personales</a></li>
+                                                                <li><a class="dropdown-item" href="./pacientes-ficha-clinica.php">Ir a la ficha clinica del paciente</a></li>
+                                                                <li><a class="dropdown-item" data-bs-toggle="modal" href="#ModalAgendar">Cambiar fecha / horario</a></li>
                                                                 <li><a class="dropdown-item" href="#">Agregar comentario</a></li>
-                                                                <li><a class="dropdown-item" href="#">Comentarios administrativos</a></li>    
+                                                                <li><a class="dropdown-item" href="./pacientes-datos-personales.php">Comentarios administrativos</a></li>    
                                                             </ul>
                                                         </td>
                                                         <td class="py-0 px-1">
@@ -392,6 +392,7 @@
 
             <!-- Footer -->
             <?php include './layout/footer.php'; ?>
+            <?php include './agenda-cambiar-fecha-horario.php'; ?>
 
         </div>
         <!-- end main content-->
