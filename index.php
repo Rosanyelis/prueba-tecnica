@@ -29,11 +29,12 @@
 <body>
 
     <!-- auth-page wrapper -->
-    <div class="auth-page-wrapper auth-bg-cover py-5 d-flex justify-content-center align-items-center min-vh-100">
-        <img src="/assets/logo-text.png" alt="" width="20%" style="position:absolute; top:10px;right:0;">
+    <div class="auth-page-wrapper auth-bg-cover pt-5 d-flex justify-content-center align-items-center "
+        style="min-height: 100vh;" >
+        <img src="/assets/logo-text.png" alt="" width="15%" style="position:absolute; top:10px;right:0;">
         <div class="bg-overlay"></div>
         <!-- auth-page content -->
-        <div class="auth-page-content overflow-hidden pt-lg-5">
+        <div class="auth-page-content overflow-hidden pt-lg-2 pb-lg-2 mb-4">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -116,7 +117,7 @@
         <!-- end auth page content -->
 
         <!-- footer -->
-        <footer class="footer galaxy-border-none">
+        <footer class="footer galaxy-border-none ">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">

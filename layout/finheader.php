@@ -6,6 +6,8 @@
     <script src="../assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
     <script src="../assets/js/plugins.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
     <script src="../assets/libs/@simonwep/pickr/pickr.min.js"></script>
     <script type="text/javascript" src="../assets/libs/choices/choices.min.js"></script>
     <script type="text/javascript" src="../assets/libs/flatpickr/flatpickr.min.js"></script>
@@ -26,10 +28,30 @@
     <script src="../assets/libs/filepond-plugin-file-encode/filepond-plugin-file-encode.min.js"></script>
 
     <script src="../assets/js/pages/form-file-upload.init.js"></script>
+
+    <!--datatable js-->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+
+    <script src="../assets/js/pages/datatables.init.js"></script>
     <!-- App js -->
     <script src="../assets/js/app.js"></script>
 
     <script>
+        // Crear un objeto Date con la fecha actual
+        // y establecer la zona horaria a UTC-5 (hora de Lima, Perú)
+        const fecha = new Date(new Date());
+        // definir en formato  Lunes 20 de enero 2025
+        const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const fechaFormateada = fecha.toLocaleDateString('es-ES', opciones);
+  
+        if (document.querySelector(".fecha-dia")) {
+            // Mostrar la fecha formateada en el elemento con la clase "fecha-dia"
+            document.querySelector(".fecha-dia").textContent = fechaFormateada;
+        }
+        
+
         let fechaActual = new Date(); // Fecha actual
         const diasSemana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
         const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];

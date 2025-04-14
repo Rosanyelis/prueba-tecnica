@@ -34,79 +34,7 @@
 
                     
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="user-profile-header-banner p-3 rounded">
-                                    <div class="row gy-2 justify-content-center ">
-                                        <div class="col-lg-2 col-md-2 col-sm-12 text-center p-2">
-                                            <div class="profile-user position-relative d-inline-block ">
-                                                <img src="../assets/images/users/avatar-1.jpg" class="rounded-circle avatar-xxl img-thumbnail user-profile-image material-shadow" alt="user-profile-image">
-                                                <div class="avatar-xs p-0 rounded-circle profile-photo-edit ">
-                                                    <input id="profile-img-file-input" type="file" class="profile-img-file-input">
-                                                    <label for="profile-img-file-input" class="profile-photo-edit avatar-xs ">
-                                                        <span class="avatar-title rounded-circle bg-light text-body material-shadow">
-                                                            <i class="ri-pencil-fill"></i>
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-12 mx-2" >
-                                            <!-- <div class="user-profile-info "> -->
-                                                <h4 class="mb-2 text-white">Gustavo Josue Aquino </h4>
-                                                <ul
-                                                    class="list-unstyled mb-0 text-white align-items-center  justify-content-sm-start justify-content-center ">
-                                                    <li><span class="fw-medium">ID: 12345</span></li>
-                                                    <li><span class="fw-medium">Gutavo@hotmail.com</span></li>
-                                                    <li><span class="fw-medium">+123 456 789</span></li>
-                                                    <li class="mt-lg-3 mt-sm-0 mt-md-0"><span class="fw-medium">Sin convenio</span></li>
-                                                </ul>
-                                            <!-- </div> -->
-                                        </div>
-                                        <div class="col-lg-2 col-md-2 col-sm-12 ml-2 ">
-                                            <div class="card card-color ">
-                                                <div class="card-header card-color-header text-center py-1 ">
-                                                    <strong>Alertas Médicas</strong>
-                                                </div>
-                                                <div class="card-body card-color-body py-1" >
-                                                    <ul class="list-unstyled mb-0 ">
-                                                        <li>no tiene</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2 col-sm-12">
-                                            <div class="card card-color rounded-bottom">
-                                                <div class="card-header card-color-header text-center py-1">
-                                                    <strong>Enfermedades</strong>
-                                                </div>
-                                                <div class="card-body card-color-body py-1">
-                                                    <ul class="list-unstyled mb-0 ">
-                                                        <li>no tiene</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2 col-sm-12">
-                                            <div class="card card-color ">
-                                                <div class="card-header card-color-header text-center py-1">
-                                                    <strong>Medicamentos</strong>
-                                                </div>
-                                                <div class="card-body card-color-body py-1">
-                                                    <ul class="list-unstyled mb-0 ">
-                                                        <li>no tiene</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                <?php include './layout/menu-perfil-paciente.php'; ?>
-                                </div>
-                            </div>
-                            <!-- end col -->
-                        </div>
+                    <?php include './layout/preview-pacientes.php'; ?>
                         <!-- end col -->
                     </div>
                     <!-- end row -->
@@ -423,7 +351,7 @@
 
             <!-- Footer -->
             <?php include './layout/footer.php'; ?>
-
+            <?php include './pacientes-perfil-dar-cita.php'; ?>
         </div>
         <!-- end main content-->
 

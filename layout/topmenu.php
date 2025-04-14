@@ -32,23 +32,36 @@
                         </button>
 
                         <div class="app-search flex-wrap d-none d-md-block">
-                            <a href="../agenda.php" class="btn btn-ghost-primary material-shadow-none btn-ghost-secondary "
+                            <a href="../agenda.php" class="btn btn-ghost-primary material-shadow-none btn-ghost-secondary 
+                                <?php if (basename($_SERVER['PHP_SELF']) == 'agenda.php') { echo 'active'; } ?>"
                                 style="color: gray;" >
                                 Agenda
                             </a>
-                            <a href="../pacientes.php" class="btn btn-ghost-primary material-shadow-none btn-ghost-secondary " 
+                            <a href="../pacientes.php" class="btn btn-ghost-primary material-shadow-none btn-ghost-secondary 
+                                <?php if (basename($_SERVER['PHP_SELF']) == 'pacientes.php') { echo 'active'; } ?>" 
                                 style="color: gray;">
                                 Pacientes
                             </a>
-                            <a href="javascript:void();" class="btn btn-ghost-primary material-shadow-none btn-ghost-secondary "
+                            <a href="../cajas.php" class="btn btn-ghost-primary material-shadow-none btn-ghost-secondary 
+                                <?php if (basename($_SERVER['PHP_SELF']) == 'cajas.php') { echo 'active'; } ?>"
                                 style="color: gray;" >
                                 Cajas
                             </a>
-                            <a href="javascript:void();" class="btn btn-ghost-primary material-shadow-none btn-ghost-secondary " 
+                            <a href="../recaudacion.php" class="btn btn-ghost-primary material-shadow-none btn-ghost-secondary 
+                                <?php if (basename($_SERVER['PHP_SELF']) == 'recaudacion.php') { echo 'active'; } ?>" 
                                 style="color: gray;">
                                 Recaudación
                             </a>
-                            <a href="javascript:void();" class="btn btn-ghost-primary material-shadow-none btn-ghost-secondary dropdown-toggle"
+                            <a href="javascript:void();" class="btn btn-ghost-primary material-shadow-none btn-ghost-secondary dropdown-toggle
+                                <?php if (basename($_SERVER['PHP_SELF']) == 'administracion-gastos.php' || 
+                                        basename($_SERVER['PHP_SELF']) == 'administracion-inventario.php' ||
+                                        basename($_SERVER['PHP_SELF']) == 'administracion-laboratorio.php' ||
+                                        basename($_SERVER['PHP_SELF']) == 'administracion-planes-y-servicios.php' ||
+                                        basename($_SERVER['PHP_SELF']) == 'configuracion-aranceles-de-precios.php' ||
+                                        basename($_SERVER['PHP_SELF']) == 'configuracion-documentos-clinicos.php' ||
+                                        basename($_SERVER['PHP_SELF']) == 'configuracion-consentimientos-informados.php' ||
+                                        basename($_SERVER['PHP_SELF']) == 'configuracion-logotipo.php' ||
+                                        basename($_SERVER['PHP_SELF']) == 'configuracion-pagos-anulados-y-pendientes.php') { echo 'active'; } ?>"
                                 style="color: gray;" 
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Administración
@@ -96,8 +109,8 @@
                             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
                                 <a class="dropdown-item" href="../agenda.php"><i class="mdi mdi-minus text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Agenda</span></a>
                                 <a class="dropdown-item" href="../pacientes.php"><i class="mdi mdi-minus text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Pacientes</span></a>
-                                <a class="dropdown-item" href="javascript:void();"><i class="mdi mdi-minus text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Cajas</span></a>
-                                <a class="dropdown-item" href="javascript:void();"><i class="mdi mdi-minus text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Recaudación</span></a>
+                                <a class="dropdown-item" href="../cajas.php"><i class="mdi mdi-minus text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Cajas</span></a>
+                                <a class="dropdown-item" href="../recaudacion.php"><i class="mdi mdi-minus text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Recaudación</span></a>
                                 <a class="dropdown-item dropdown" href="#" id="configuraciones" data-bs-toggle="dropdown" >
                                     <i class="mdi mdi-minus text-muted fs-16 align-middle me-1"></i> 
                                     <span class="align-middle">Administración</span>
@@ -120,22 +133,10 @@
                             
                         </div>
 
+                        <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle light-dark-mode">
+                            <i class="bx bx-moon fs-22"></i>
+                        </button>
                         
-
-
-                        <div class="ms-1 header-item d-none d-sm-flex">
-                            <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle" data-toggle="fullscreen">
-                                <i class="bx bx-fullscreen fs-22"></i>
-                            </button>
-                        </div>
-
-                        <div class="ms-1 header-item d-none d-sm-flex">
-                            <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle light-dark-mode">
-                                <i class="bx bx-moon fs-22"></i>
-                            </button>
-                        </div>
-                        
-
                         <div class="dropdown topbar-head-dropdown ms-1 header-item" id="notificationDropdown">
                             <button type="button" class="btn btn-icon btn-topbar material-shadow-none btn-ghost-secondary rounded-circle" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
                                 <i class='bx bx-bell fs-22'></i>

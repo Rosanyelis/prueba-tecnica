@@ -265,7 +265,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light">Limpiar datos</button>
-                    <button type="button" class="btn btn-success ">Guardar</button>
+                    <button type="button" class="btn btn-success " data-bs-dismiss="modal">Guardar</button>
                 </div>
 
             </div><!-- /.modal-content -->

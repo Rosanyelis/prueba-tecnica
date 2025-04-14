@@ -178,3 +178,23 @@
     vertical-align: middle;
     background:#066602;
 }
+
+.avatar-paciente{
+   position: absolute;
+   top: 1em !important;
+   left: 1em !important;
+}
+
+/** solo cuando sea un dispositivo movil hacer que las card tenga el 100% de su ancho */
+
+@media (max-width: 768px) {
+    .avatar-paciente{
+        top: 1em !important;
+        left: 1em !important;
+    }
+
+    .card-width{
+        width: 20rem ! important;
+    }
+
+}

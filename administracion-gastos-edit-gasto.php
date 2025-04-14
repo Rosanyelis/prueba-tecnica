@@ -73,7 +73,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-success ">Agregar</button>
+                    <button type="button" class="btn btn-success " data-bs-dismiss="modal">Agregar</button>
                 </div>
 
             </div><!-- /.modal-content -->

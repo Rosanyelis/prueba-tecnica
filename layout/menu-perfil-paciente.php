@@ -1,5 +1,6 @@
-                                    <ul class="nav nav-pills nav-success fs-14 " >
-                                        <li class="nav-item">
+                                    
+                                    <ul class="nav nav-pills nav-success fs-12 " >
+                                        <li class="nav-item ">
                                             <a class="nav-link <?php if ($_SERVER['REQUEST_URI'] == '/pacientes-datos-personales.php') { echo 'active'; } ?>" href="../pacientes-datos-personales.php">
                                                 Datos personales
                                             </a>
@@ -20,7 +21,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link"  href="#settings">
+                                            <a class="nav-link"  href="javascript: void(0);" data-bs-toggle="modal" data-bs-target="#ModalDarCita">
                                                 Dar Cita
                                             </a>
                                         </li>

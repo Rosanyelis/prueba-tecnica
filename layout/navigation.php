@@ -62,44 +62,48 @@
                    
                     <ul class="navbar-nav mt-3" id="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="../agenda.php">
-                                <i class="ri-dashboard-2-line"></i> 
+                            <a class="nav-link menu-link 
+                                <?php if (basename($_SERVER['PHP_SELF']) == 'agenda.php') { echo 'active'; } ?>"
+                                href="../agenda.php">
+                                <i class="ri-calendar-line"></i> 
                                 <span data-key="t-dashboards">Agenda</span>
                             </a>
                         </li> <!-- end Dashboard Menu -->
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="javascript: void(0);">
-                                <i class="ri-apps-2-line"></i> 
+                                <i class="ri-lightbulb-line"></i> 
                                 <span data-key="t-apps">Dar Día</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="../pacientes.php">
-                                <i class="ri-apps-2-line"></i> 
+                            <a class="nav-link menu-link 
+                                <?php if (basename($_SERVER['PHP_SELF']) == 'pacientes.php') { echo 'active'; } ?>" 
+                                href="../pacientes.php">
+                                <i class="ri-group-2-line"></i> 
                                 <span data-key="t-apps">Pacientes</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="javascript: void(0);">
-                                <i class="ri-apps-2-line"></i> 
+                                <i class="ri-calendar-schedule-line"></i> 
                                 <span data-key="t-apps">Reprogramación</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="javascript: void(0);">
-                                <i class="ri-apps-2-line"></i> 
+                            <a class="nav-link menu-link" href="../semanal.php">
+                                <i class="ri-calendar-todo-line"></i> 
                                 <span data-key="t-apps">Semanal</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="javascript: void(0);">
-                                <i class="ri-apps-2-line"></i> 
+                                <i class="ri-list-settings-line"></i> 
                                 <span data-key="t-apps">Diaria Global</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="javascript: void(0);">
-                                <i class="ri-apps-2-line"></i> 
+                                <i class="ri-file-list-3-line"></i> 
                                 <span data-key="t-apps">Diaria</span>
                             </a>
                         </li>
