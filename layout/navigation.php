@@ -51,11 +51,13 @@
             <div id="scrollbar">
                 <div class="container-fluid">
                     <div id="two-column-menu">
-                        <div id="calendar" class="calendar-container mx-auto">
-                            <span class="arrow arrow-left" onclick="cambiarFecha(-1)">&#8249;</span> 
-                            <p class="calendar-day"></p>
-                            <p class="calendar-date"></p>
-                            <p class="calendar-month"></p>
+                        <div id="calendar" class="calendar mx-auto mt-4">
+                            <span class="arrow arrow-left" onclick="cambiarFecha(-1)" >&#8249;</span>
+                                <div class="clip left"></div>
+                                <div class="clip right"></div>
+                                <span class="date"></span>
+                                <span class="date-day"></span>
+                                <div class="calendar-base"></div>
                             <span class="arrow arrow-right" onclick="cambiarFecha(1)">&#8250;</span>
                         </div>
                     </div>
@@ -84,25 +86,38 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="javascript: void(0);">
+                            <a class="nav-link menu-link" href="javascript: void(0);"
+                                data-bs-toggle="modal" href="#ModalAgendar">
                                 <i class="ri-calendar-schedule-line"></i> 
                                 <span data-key="t-apps">Reprogramación</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="../semanal.php">
+                            <a class="nav-link menu-link" href="javascript:void(0);"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="ri-calendar-todo-line"></i> 
                                 <span data-key="t-apps">Semanal</span>
+                                
                             </a>
+                            <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="../semanal.php">Dr Fernando</a></li>
+                                <li><a class="dropdown-item" href="../semanal.php">Dr Pedro</a></li>
+                                <li><a class="dropdown-item" href="../semanal.php">Dr Camilo</a></li>
+                                <li><a class="dropdown-item" href="../semanal.php">Dra Pilar</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="javascript: void(0);">
+                            <a class="nav-link menu-link
+                                <?php if (basename($_SERVER['PHP_SELF']) == 'agenda.php') { echo 'active'; } ?>"
+                                href="../agenda.php">
                                 <i class="ri-list-settings-line"></i> 
                                 <span data-key="t-apps">Diaria Global</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="javascript: void(0);">
+                            <a class="nav-link menu-link  
+                                <?php if (basename($_SERVER['PHP_SELF']) == 'agenda.php') { echo 'active'; } ?>"
+                                href="../agenda.php">
                                 <i class="ri-file-list-3-line"></i> 
                                 <span data-key="t-apps">Diaria</span>
                             </a>

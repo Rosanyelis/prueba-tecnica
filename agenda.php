@@ -89,8 +89,8 @@
                                                         <li><a class="dropdown-item" href="#">Agregar</a></li>
                                                     </ul>   
                                                 </td>
-                                                <td style="text-align: left;">
-                                                    <span id="dropdownMenuOffset" class="dropdown"
+                                                <td style="text-align: left;" class="px-4">
+                                                    <span id="dropdownMenuOffset" class="btn btn-atendido btn-sm dropdown w-100 text-start"
                                                         data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="5,20">
                                                         Confirmado por Teléfono <i class="ri-arrow-drop-down-line align-middle fs-18"></i>
                                                     </span>
@@ -180,8 +180,8 @@
                                                         <li><a class="dropdown-item" href="#">Agregar</a></li>
                                                     </ul>   
                                                 </td>
-                                                <td style="text-align: left;">
-                                                    <span id="dropdownMenuOffset" class="dropdown"
+                                                <td style="text-align: left;" class="px-4">
+                                                    <span id="dropdownMenuOffset" class="btn btn-no-confirmado btn-sm dropdown w-100 text-start"
                                                         data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="5,20">
                                                         No Confirmado <i class="ri-arrow-drop-down-line align-middle fs-18"></i>
                                                     </span>
@@ -271,8 +271,8 @@
                                                         <li><a class="dropdown-item" href="#">Agregar</a></li>
                                                     </ul>   
                                                 </td>
-                                                <td style="text-align: left;">
-                                                    <span id="dropdownMenuOffset" class="dropdown"
+                                                <td style="text-align: left;" class="px-4">
+                                                    <span id="dropdownMenuOffset" class="btn btn-no-asiste btn-sm dropdown w-100 text-start"
                                                         data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="5,20">
                                                         No Asiste <i class="ri-arrow-drop-down-line align-middle fs-18"></i>
                                                     </span>

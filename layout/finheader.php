@@ -57,15 +57,20 @@
         const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
         function actualizarCalendario() {
-            document.querySelector(".calendar-day").textContent = diasSemana[fechaActual.getDay()];
-            document.querySelector(".calendar-date").textContent = fechaActual.getDate();
-            document.querySelector(".calendar-month").textContent = `${meses[fechaActual.getMonth()]} ${fechaActual.getFullYear()}`;
+            document.querySelector(".date-day").textContent = diasSemana[fechaActual.getDay()];
+            // mostrar el numero del dia con cero delante cuando sea del 1 al 9
+            document.querySelector(".date").textContent = String(fechaActual.getDate()).padStart(2, '0');
+            // document.querySelector(".date").textContent = fechaActual.getDate();
         }
 
         function cambiarFecha(dias) {
-            fechaActual.setDate(fechaActual.getDate() + dias);
-            actualizarCalendario();
+            fechaActual.setDate(fechaActual.getDate() + dias); // Cambiar la fecha actual
+            actualizarCalendario(); // Actualizar el calendario
         }
+        // Asignar eventos a los botones de flechas
+        document.querySelector(".arrow-left").addEventListener("click", function() {
+            cambiarFecha(-1); // Cambiar la fecha hacia atrás
+        });
 
         actualizarCalendario(); // Mostrar la fecha actual al cargar la página
     </script>

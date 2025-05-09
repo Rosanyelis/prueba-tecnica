@@ -31,7 +31,6 @@
     <!-- auth-page wrapper -->
     <div class="auth-page-wrapper auth-bg-cover pt-5 d-flex justify-content-center align-items-center "
         style="min-height: 100vh;" >
-        <img src="/assets/logo-text.png" alt="" width="15%" style="position:absolute; top:10px;right:0;">
         <div class="bg-overlay"></div>
         <!-- auth-page content -->
         <div class="auth-page-content overflow-hidden pt-lg-2 pb-lg-2 mb-4">
@@ -76,8 +75,10 @@
                                                     <label class="form-check-label" for="auth-remember-check">Remember me</label>
                                                 </div>
 
-                                                <div class="mt-4">
-                                                    <a href="agenda.php" class="btn btn-success w-100" type="submit">Sign In</a>
+                                                <div class="mt-4 flex gap-2 justify-content-between text-center p-0">
+                                                    
+                                                    <a href="agenda.php" class="btn btn-success w-50" type="submit">Sign In</a>
+                                                    <a href="https://dentalflowsoftware.netlify.app" class="btn btn-primary w-25" >Sign up</a>
                                                 </div>
 
                                                 <div class="mt-4 text-center">

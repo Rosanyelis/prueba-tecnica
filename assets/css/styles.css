@@ -1,4 +1,4 @@
-.calendar-container {
+/* .calendar-container {
     background-color: white;
     border-radius: 15px;
     padding: 10px;
@@ -23,24 +23,24 @@
     font-size: 1rem;
     color: #6c757d;
     margin: 0;
-}
+} */
 .arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 5rem;
-    color: gray;
+    color: #ff9900;
     cursor: pointer;
     padding: 5px;
     transition: 0.3s;
-    width: 35px;
-    height: 35px;
+    width: 15px;
+    height: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .arrow:hover {
-    color: black;
+    color: #ced7d8;
 }
 .arrow-left {
     left: 10px;
@@ -48,7 +48,75 @@
 .arrow-right {
     right: 10px;
 }
+.calendar {
+    position: relative;
+    width: 170px;
+    height: 100px;
+    background: linear-gradient(135deg, #007bff, #4682b4);
+    border-radius: 10px;
+    box-shadow: -15px 15px 20px rgba(0,0,0,0.2);
+    overflow: visible;
 
+}
+
+.clip {
+    position: absolute;
+    top: -20px;
+    width: 20px;
+    height: 30px;
+    background: #ff9900;
+    border-radius: 40%;
+    box-shadow: 0 10px 0px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.clip.left {
+    left: calc(50% - 30px);
+}
+
+.clip.right {
+    left: calc(50% + 10px);
+}
+
+.date {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3.0rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3),
+    2px 2px 0 rgba(0, 0, 0, 0.3),
+    1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.date-day {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3),
+    2px 2px 0 rgba(0, 0, 0, 0.3),
+    2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+.calendar-base {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 20px;
+    background: #ced7d8 ;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    z-index: -1;
+}
 .title-item{
     display: block;
     width: 100%;

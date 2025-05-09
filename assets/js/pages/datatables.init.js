@@ -29,6 +29,50 @@ document.addEventListener('DOMContentLoaded', function () {
             },
         }
     );
+    let table2 = new DataTable('#example_2',
+        {
+            responsive: true,
+            lengthChange: false,
+            searching: false,
+            language: {
+                "lengthMenu": "_MENU_",
+                "search": "",
+                "searchPlaceholder": "Search records",
+                "info": "Mostrando _START_ a _END_ de _TOTAL_ registros",
+                "infoEmpty": "No entries found",
+                "infoFiltered": "(filtered from _MAX_ total entries)",
+                "zeroRecords": "No matching records found",
+                "paginate": {
+                    "first": '<i class="mdi mdi-chevron-left"></i>',
+                    "last": '<i class="mdi mdi-chevron-right"></i>',
+                    "next": '<i class="mdi mdi-chevron-right"></i>',
+                    "previous": '<i class="mdi mdi-chevron-left"></i>'
+                }
+            },
+        }
+    );
+    let table3 = new DataTable('#example_3',
+        {
+            responsive: true,
+            lengthChange: false,
+            searching: false,
+            language: {
+                "lengthMenu": "_MENU_",
+                "search": "",
+                "searchPlaceholder": "Search records",
+                "info": "Mostrando _START_ a _END_ de _TOTAL_ registros",
+                "infoEmpty": "No entries found",
+                "infoFiltered": "(filtered from _MAX_ total entries)",
+                "zeroRecords": "No matching records found",
+                "paginate": {
+                    "first": '<i class="mdi mdi-chevron-left"></i>',
+                    "last": '<i class="mdi mdi-chevron-right"></i>',
+                    "next": '<i class="mdi mdi-chevron-right"></i>',
+                    "previous": '<i class="mdi mdi-chevron-left"></i>'
+                }
+            },
+        }
+    );
 });
 
 
